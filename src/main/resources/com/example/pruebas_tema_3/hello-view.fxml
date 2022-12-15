@@ -8,22 +8,32 @@
 <?import javafx.scene.layout.RowConstraints?>
 
 <?import com.example.pruebas_tema_3.CombinedControl?>
+<?import com.example.pruebas_tema_3.ExtendedControl?>
 <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style/st.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pruebas_tema_3.CombinedControl">
-  <columnConstraints>
-    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-  </columnConstraints>
-  <rowConstraints>
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-  </rowConstraints>
-   <children>
-      <CheckBox mnemonicParsing="false" stylesheets="@style/st.css" text="Prueba">
-         <GridPane.margin>
-            <Insets left="20.0" />
-         </GridPane.margin>
-      </CheckBox>
-      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1"><CombinedControl></CombinedControl></HBox>
-   </children>
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <CheckBox mnemonicParsing="false" stylesheets="@style/st.css" text="Prueba">
+            <GridPane.margin>
+                <Insets left="20.0" />
+            </GridPane.margin>
+        </CheckBox>
+        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+<CombinedControl></CombinedControl>
+        </HBox>
+      <HBox fx:id="hbox2" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2" >
+
+          <ExtendedControl></ExtendedControl>
+      </HBox>
+
+
+    </children>
 </GridPane>

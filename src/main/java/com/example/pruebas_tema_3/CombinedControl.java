@@ -11,6 +11,9 @@ import java.util.Locale;
 public class CombinedControl extends HBox {
     private TextField textField;
     private Button button;
+    @javafx.fxml.FXML
+    private HBox hbox2;
+
     // ******************** Constructors **************************************
     public CombinedControl() {
         getStylesheets().add(CombinedControl.class.getResource("style/combined.css").toExternalForm());
