@@ -142,6 +142,7 @@ public class CanvasControl extends Region {
                 }
             }
         };
+
         for (int i = 0; i < NO_OF_PARTICLES; i++) {
             particles[i] = new ImageParticle(PREFERRED_WIDTH, PREFERRED_HEIGHT, particleImg);
         }
@@ -160,7 +161,6 @@ public class CanvasControl extends Region {
                 setPrefSize(PREFERRED_WIDTH, PREFERRED_HEIGHT);
             }
         }
-
         getStyleClass().add("canvas-control");
 
         canvas = new Canvas(getPrefWidth(), getPrefHeight());
