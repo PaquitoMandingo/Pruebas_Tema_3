@@ -10,6 +10,7 @@
 <?import com.example.pruebas_tema_3.CombinedControl?>
 <?import com.example.pruebas_tema_3.ExtendedControl?>
 <?import com.example.pruebas_tema_3.CustomControl?>
+<?import com.example.pruebas_tema_3.RegionControl?>
 <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style/st.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pruebas_tema_3.CombinedControl">
     <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -38,6 +39,11 @@
     <CustomControl />
 
 </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <RegionControl type="CLOSE"></RegionControl>
+            <RegionControl type="MINIMIZE"></RegionControl>
+            <RegionControl type="ZOOM"></RegionControl>
+        </HBox>
 
 
     </children>
