@@ -1,5 +1,6 @@
 package com.example.pruebas_tema_3;
 
+import javafx.beans.Observable;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.BooleanPropertyBase;
 import javafx.beans.property.ObjectProperty;
@@ -11,6 +12,14 @@ import javafx.scene.paint.Color;
 import java.util.List;
 
 public class CustomControl extends Control {
+    public boolean isOn() {
+        return false;
+    }
+
+    public Observable onProperty() {
+        return null;
+    }
+
     public enum SkinType { LED, SWITCH }
     private static final StyleablePropertyFactory<CustomControl> FACTORY = new StyleablePropertyFactory<>(Control.getClassCssMetaData());
     // CSS pseudo classes
@@ -25,7 +34,7 @@ public class CustomControl extends Control {
     private SkinType skinType;
     // ******************** Constructors **************************************
     public CustomControl() {
-        this(SkinType.LED);
+        this(SkinType.SWITCH);
     }
     public CustomControl(final SkinType skinType) {
         getStyleClass().add("custom-control");
@@ -57,11 +66,11 @@ public class CustomControl extends Control {
     @Override public String getUserAgentStylesheet() {
         switch(skinType) {
             case SWITCH:
-                if (null == switchUserAgentStyleSheet) { switchUserAgentStyleSheet = CustomControl.class.getResource("switch.css").toExternalForm(); }
+                if (null == switchUserAgentStyleSheet) { switchUserAgentStyleSheet = CustomControl.class.getResource("style/4st.css").toExternalForm(); }
                 return switchUserAgentStyleSheet;
             case LED   :
             default    :
-                if (null == defaultUserAgentStyleSheet) { defaultUserAgentStyleSheet = CustomControl.class.getResource("custom-control.css").toExternalForm(); }
+                if (null == defaultUserAgentStyleSheet) { defaultUserAgentStyleSheet = CustomControl.class.getResource("style/4st.css").toExternalForm(); }
                 return defaultUserAgentStyleSheet;
         }
     }

@@ -156,7 +156,6 @@ public class ExtendedControl extends TextField {
     }
 
 
-
     // ******************** Style related *************************************
     @Override public String getUserAgentStylesheet() {
         if (null == userAgentStyleSheet) { userAgentStyleSheet = getClass().getResource("style/extended.css").toExternalForm(); }
